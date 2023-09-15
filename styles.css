@@ -1,0 +1,205 @@
+*{
+    font-family: 'Fraunces',serif;
+    color: #fff;
+    
+  }
+  
+  
+  body {
+      background: #61bd6c;
+      margin: 0;
+  
+    }
+  
+  .container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .appcalculator{
+  display: grid ;
+  grid-template-columns:repeat(4,75px) ;
+  grid-template-rows: 160px repeat(4,75px) ;
+  background-color:gray;
+  padding: 15px;
+  border-radius: 32px;
+  box-shadow: 15px 10px 0px 5px #00000033;
+  }
+  
+  button{
+      cursor: pointer;
+      margin:5px; 
+      padding: 0px;
+      border-radius: 32px;
+      font-size: 1.5em;
+      border: none;
+      background-color:gray;
+      box-shadow:5px 5px 10px -3px #00000033, -5px -5px 15px 3px #2a27271f;
+      
+  }
+  button.numero.punto, button.operador.igual {
+    width: 65px;
+    height: 65px;
+  }
+  #botonC{
+    background-color: darkorange;
+    
+  }
+  
+  button:active{
+    background-color:#454040f4
+  }
+  #botonC:active{
+    background-color: #e9940c;
+    }
+    
+  .col-2{
+    grid-column: span 2;
+  }
+  
+  
+  .screen{
+    grid-column: 1/-1;
+    padding:16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #363636;
+    border-radius: 32px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 10px #00000033
+    
+  }
+  
+  #valor-actual{
+    font-size: 1.5em;
+  }
+  
+  #valor-anterior{
+    font-size: 2.5em;
+  }
+  .contenedor {
+    display: flex;
+    flex-direction: column; /* Establece la dirección vertical */
+    align-items: center; /* Centra horizontalmente los elementos */
+  }
+  
+  .log {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative; /* Añade posicionamiento relativo al contenedor */
+  }
+  
+  #Limpiar{
+    background-color: rgb(239, 152, 1);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    cursor: pointer;
+    margin-left: -14px;
+  }
+  #Limpiar:hover{
+    background-color: rgb(211, 133, 8);
+  }
+  #mostrarHistorial {
+    background-color: rgb(239, 152, 1);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    cursor: pointer;
+    margin-left: -5px ;
+
+  }
+  
+  #mostrarHistorial:hover {
+    background-color: rgb(211, 133, 8);
+  }
+  
+  
+  #historial {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: #e9940c;
+    border-radius: 5px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #e9940c #e9940c;
+    position: absolute; /* Añade posicionamiento absoluto */
+    top: -178px; /* Coloca la lista justo debajo del botón */
+    left: 150px; /* Coloca la lista al lado derecho del botón */
+    max-height: 250px; /* Ajusta la altura máxima según tus necesidades */
+    /* Inicialmente oculta la lista del historial */
+  scrollbar-color: #e9940c #e9940c; /* Color del pulgar y del riel */
+  flex-direction: column-reverse;
+  }
+  
+  
+  #historial::-webkit-scrollbar {
+    border-radius: 30px;
+    width: 8px; /* Anchura del scroll */
+  }
+  
+  #historial::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background-color: #e9940c45; /* Color del pulgar */
+  }
+  
+  #historial::-webkit-scrollbar-thumb:hover {
+    border-radius: 30px;
+    background-color: #e9940c; /* Color del pulgar al pasar el mouse */
+  }
+  
+  #historial::-webkit-scrollbar-track {
+    border-radius: 30px;
+    background-color: #e9940c; /* Color del riel */
+  }
+  
+  
+#descarga{
+    background-color: rgb(239, 152, 1);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    cursor: pointer;
+    margin-left: 20px ;
+
+}  
+
+#descarga:hover{
+  background-color: rgb(211, 133, 8);
+}
+  
+  
+  
+  
+  #historial li:hover {
+    background-color: #fe9d00fe;
+    cursor: pointer;
+  }
+  #historial li {
+    
+    padding: 10px 16px;
+    border-bottom: 1px solid #000000;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  justify-content: center;
+  }

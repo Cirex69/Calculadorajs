@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css"/>
+    
+<!-- <script src="../Calculadora.js" type="text/javascript"></script> -->
+ <title>Calculadora+</title>
+    
+</head>
+<body>
+    <div class="container">
+    <div class="appcalculator">
+<div class="screen">
+            <div id="valor-anterior"></div>
+            <div id="valor-actual">0</div>
+        </div>
+<button onclick="" class="col-2 operador" id="botonC">C</button>
+<button class="operador" id="borrar">&larr;</button>
+<button class="operador">/</button>
+<button class="numero">7</button>
+<button class="numero" >8</button>
+<button class="numero">9</button>
+<button class="operador">*</button>
+<button class="numero">4</button>
+<button class="numero">5</button>
+<button class="numero">6</button>
+<button class="operador">-</button>
+<button class="numero">1</button>
+<button class="numero">2</button>
+<button class="numero">3</button>
+<button class="operador">+</button>
+<button class="col-2 numero">0</button>
+<button class="numero punto">.</button>
+<button class="operador igual" id="igual">=</button>
+    </div>
+    <div class="contenedor">
+    
+
+      
+            <button id="mostrarHistorial">Mostrar Historial</button>
+            <button class="Descargar" id="descarga">Descargar Historial</button>
+            <button class ="Limpiar"id="Limpiar">Borrar Historial</button>
+            <div class="log">
+            <ul id="historial">Operaciones Realizadas
+            <!-- Aquí se mostrarán las operaciones -->
+          </ul>
+        <!--   <button id="descarga">Descargar Historial</button> -->
+        </div>
+    </div>
+
+    
+</div>
+
+
+
+<script src="../main/scripts.js"></script>
+  </body>
+</html>
