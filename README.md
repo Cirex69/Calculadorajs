@@ -33,7 +33,7 @@ Esta es una calculadora simple desarrollada en JavaScript que te permite realiza
 
 - HTML
 - CSS
-- JavaScript
+- JavaScript (vanilla)
 
 ## Capturas de Pantalla
 
